@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+  <title>Knapp's Example 4</title>
+  <link rel = "stylesheet" href = "../css/styles.css">
+</head>
+<body>
+  <p><a href = "../index.html">Link to Start Page</a></p>
+  <h2>Sample Form</h2>
+  <form>
+    <p>
+      <label for = "name">Name</label>:
+      <input type = "text" name = "name" id = "name" required>
+    </p>
+    <p>
+      <label for = "email">Email</label>:
+      <input type = "email" name = "email" id = "email" required placeholder = "user@domain">
+      <span id = "emailHelp"></span>
+    </p>
+    <p>
+      <label for = "payment">Payment Type</label>:
+      <br>
+      <input type = "radio" name = "cash" value = "CAS">
+      <label for = "cash">Cash</label>
+      <br>
+      <input type = "radio" name = "creditcard" value = "CRE">
+      <label for = "creditcard">Credit Card</label>
+      <br>
+      <input type = "radio" name = "googlepay" value = "GOO">
+      <label for = "googlepay">Google Pay</label>
+      <br>
+      <input type = "radio" name = "applepay" value = "APP">
+      <label for = "applepay">Apple Pay</label>
+      <br>
+    </p>
+    <p>
+      <input type = "checkbox" name = "confirmation" id = "confirmation">
+      <label for = "confirmation">Sign me up for special promotions.</label>
+    </p>
+    <p>
+      <label for = "location">Preferred Location</label>:
+      <select name = "location" id = "location">
+        <option value = "LA" selected>Los Angeles</option>
+        <option value = "OC">Orange County</option>
+        <option value = "RI">Riverside</option>
+        <option value = "Sd">San Deigo</option>
+      </select>
+    </p>
+    <input type = "submit" value = "Submit">
+    <input type = "reset" value = "Cancel">
+  </form>
+  <p id = "result"></p>
+
+  <script src = "../js/ex4.js"></script>
+</body>
+</html>
